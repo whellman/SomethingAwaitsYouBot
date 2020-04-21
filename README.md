@@ -1,1 +1,1 @@
-Bot for something awaits you messages on twitter. Inspired by Sunless Sea, by Failbetter Games.
+Bot for Something Awaits You messages on Twitter. Inspired by Sunless Sea, by Failbetter Games.
