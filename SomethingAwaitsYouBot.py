@@ -1,5 +1,12 @@
-import twitter
-api = twitter.Api(consumer_key=[consumer_key],
-                  consumer_secret=[consumer_secret],
-                  access_token_key=[access_token_key],
-                  access_token_secret=[access_token_secret])
+import tweepy
+
+from secret import *
+
+auth = tweepy.OAuthHandler(C_KEY, C_SECRET)
+
+try:
+    redirect_url = auth.get_authorization_url()
+except tweepy.TweepError:
+    print('Error! Failed to get request token.')
+
+verifier = raw_input('Verifier:')
